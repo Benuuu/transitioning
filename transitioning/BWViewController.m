@@ -8,7 +8,11 @@
 
 #import "BWViewController.h"
 
-@interface BWViewController ()
+#import "BWSecondViewController.h"
+#import "BWTransitionOne.h"
+#import "BWTransitionTwo.h"
+
+@interface BWViewController () <UIViewControllerTransitioningDelegate>
 
 @end
 
@@ -24,6 +28,32 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)buttonTouched:(id)sender {
+    BWSecondViewController *secondViewController = [[BWSecondViewController alloc] init];
+    secondViewController.transitioningDelegate = self;
+    
+    [self presentViewController:secondViewController animated:YES completion:nil];
+}
+
+- (id <UIViewControllerAnimatedTransitioning>)animationControllerForPresentedController:(UIViewController *)presented presentingController:(UIViewController *)presenting sourceController:(UIViewController *)source
+{
+//    BWTransitionOne *transition = [[BWTransitionOne alloc] init];
+//    transition.mode = BWTransitionOneModePresent;
+    BWTransitionTwo *transition = [[BWTransitionTwo alloc] init];
+    transition.mode = BWTransitionTwoModePresent;
+    return transition;
+}
+
+- (id <UIViewControllerAnimatedTransitioning>)animationControllerForDismissedController:(UIViewController *)dismissed
+{
+//    BWTransitionOne *transition = [[BWTransitionOne alloc] init];
+//    transition.mode = BWTransitionOneModeDismiss;
+    BWTransitionTwo *transition = [[BWTransitionTwo alloc] init];
+    transition.mode = BWTransitionTwoModeDismiss;
+
+    return transition;
 }
 
 @end

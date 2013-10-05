@@ -21,6 +21,12 @@
 		F3AFF41418005FE400E1038A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3AFF3F618005FE300E1038A /* UIKit.framework */; };
 		F3AFF41C18005FE400E1038A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F3AFF41A18005FE400E1038A /* InfoPlist.strings */; };
 		F3AFF41E18005FE400E1038A /* transitioningTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F3AFF41D18005FE400E1038A /* transitioningTests.m */; };
+		F3AFF42D1800956700E1038A /* BWTransitionOne.m in Sources */ = {isa = PBXBuildFile; fileRef = F3AFF42C1800956700E1038A /* BWTransitionOne.m */; };
+		F3AFF43118009B3A00E1038A /* BWSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3AFF42F18009B3A00E1038A /* BWSecondViewController.m */; };
+		F3AFF43218009B3A00E1038A /* BWSecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F3AFF43018009B3A00E1038A /* BWSecondViewController.xib */; };
+		F3AFF4351800A1CA00E1038A /* BWTransitionTwo.m in Sources */ = {isa = PBXBuildFile; fileRef = F3AFF4341800A1CA00E1038A /* BWTransitionTwo.m */; };
+		F3AFF43A1800BE8D00E1038A /* background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F3AFF4391800BE8D00E1038A /* background.jpg */; };
+		F3AFF43D1800BF4300E1038A /* BWBackgroundViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3AFF43C1800BF4300E1038A /* BWBackgroundViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +59,16 @@
 		F3AFF41918005FE400E1038A /* transitioningTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "transitioningTests-Info.plist"; sourceTree = "<group>"; };
 		F3AFF41B18005FE400E1038A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F3AFF41D18005FE400E1038A /* transitioningTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = transitioningTests.m; sourceTree = "<group>"; };
+		F3AFF42B1800956700E1038A /* BWTransitionOne.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BWTransitionOne.h; sourceTree = "<group>"; };
+		F3AFF42C1800956700E1038A /* BWTransitionOne.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BWTransitionOne.m; sourceTree = "<group>"; };
+		F3AFF42E18009B3A00E1038A /* BWSecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BWSecondViewController.h; sourceTree = "<group>"; };
+		F3AFF42F18009B3A00E1038A /* BWSecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BWSecondViewController.m; sourceTree = "<group>"; };
+		F3AFF43018009B3A00E1038A /* BWSecondViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BWSecondViewController.xib; sourceTree = "<group>"; };
+		F3AFF4331800A1CA00E1038A /* BWTransitionTwo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BWTransitionTwo.h; sourceTree = "<group>"; };
+		F3AFF4341800A1CA00E1038A /* BWTransitionTwo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BWTransitionTwo.m; sourceTree = "<group>"; };
+		F3AFF4391800BE8D00E1038A /* background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background.jpg; sourceTree = "<group>"; };
+		F3AFF43B1800BF4300E1038A /* BWBackgroundViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BWBackgroundViewController.h; sourceTree = "<group>"; };
+		F3AFF43C1800BF4300E1038A /* BWBackgroundViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BWBackgroundViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,11 +128,18 @@
 		F3AFF3F818005FE300E1038A /* transitioning */ = {
 			isa = PBXGroup;
 			children = (
+				F3AFF4381800BE7C00E1038A /* Resources */,
+				F3AFF42A1800955400E1038A /* Transitions */,
 				F3AFF40118005FE300E1038A /* BWAppDelegate.h */,
 				F3AFF40218005FE300E1038A /* BWAppDelegate.m */,
+				F3AFF43B1800BF4300E1038A /* BWBackgroundViewController.h */,
+				F3AFF43C1800BF4300E1038A /* BWBackgroundViewController.m */,
 				F3AFF40418005FE300E1038A /* Main.storyboard */,
 				F3AFF40718005FE300E1038A /* BWViewController.h */,
 				F3AFF40818005FE300E1038A /* BWViewController.m */,
+				F3AFF42E18009B3A00E1038A /* BWSecondViewController.h */,
+				F3AFF42F18009B3A00E1038A /* BWSecondViewController.m */,
+				F3AFF43018009B3A00E1038A /* BWSecondViewController.xib */,
 				F3AFF40A18005FE300E1038A /* Images.xcassets */,
 				F3AFF3F918005FE300E1038A /* Supporting Files */,
 			);
@@ -150,6 +173,25 @@
 				F3AFF41A18005FE400E1038A /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F3AFF42A1800955400E1038A /* Transitions */ = {
+			isa = PBXGroup;
+			children = (
+				F3AFF42B1800956700E1038A /* BWTransitionOne.h */,
+				F3AFF42C1800956700E1038A /* BWTransitionOne.m */,
+				F3AFF4331800A1CA00E1038A /* BWTransitionTwo.h */,
+				F3AFF4341800A1CA00E1038A /* BWTransitionTwo.m */,
+			);
+			name = Transitions;
+			sourceTree = "<group>";
+		};
+		F3AFF4381800BE7C00E1038A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F3AFF4391800BE8D00E1038A /* background.jpg */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -230,8 +272,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				F3AFF40B18005FE300E1038A /* Images.xcassets in Resources */,
+				F3AFF43A1800BE8D00E1038A /* background.jpg in Resources */,
 				F3AFF3FD18005FE300E1038A /* InfoPlist.strings in Resources */,
 				F3AFF40618005FE300E1038A /* Main.storyboard in Resources */,
+				F3AFF43218009B3A00E1038A /* BWSecondViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,7 +296,11 @@
 			files = (
 				F3AFF40918005FE300E1038A /* BWViewController.m in Sources */,
 				F3AFF3FF18005FE300E1038A /* main.m in Sources */,
+				F3AFF42D1800956700E1038A /* BWTransitionOne.m in Sources */,
 				F3AFF40318005FE300E1038A /* BWAppDelegate.m in Sources */,
+				F3AFF4351800A1CA00E1038A /* BWTransitionTwo.m in Sources */,
+				F3AFF43D1800BF4300E1038A /* BWBackgroundViewController.m in Sources */,
+				F3AFF43118009B3A00E1038A /* BWSecondViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

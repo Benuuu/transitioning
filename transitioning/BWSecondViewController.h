@@ -1,5 +1,5 @@
 //
-//  BWViewController.h
+//  BWSecondViewController.h
 //  transitioning
 //
 //  Created by Benjamin Wu on 10/5/13.
@@ -9,6 +9,8 @@
 #import <UIKit/UIKit.h>
 #import "BWBackgroundViewController.h"
 
-@interface BWViewController : BWBackgroundViewController
+@interface BWSecondViewController : BWBackgroundViewController
+
+@property (weak, nonatomic) IBOutlet UIImageView *backgroundView;
 
 @end
